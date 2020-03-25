@@ -6,4 +6,7 @@ $dbname = 'ghifaridb';
 
 $c = new mysqli($dbhost, $dbusername, $dbpassword, $dbname);
 if($c->connect_erro){
-  ech
+  echo "unable to connect, please try again";
+  die();
+}
+?>
